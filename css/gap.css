@@ -1,0 +1,10 @@
+/*Nesse ponto eu coloco e seto valores padroes q eu vou seguir dentro do meu css*/
+/*fonte : https://www.w3schools.com/cssref/sel_root.asp*/
+:root {
+  --gap-small: 1.2rem;
+  /*seto um valor de distancia de 1.2rem*/
+  --gap-medium: 2.4rem;
+  /*seto um valor de distancia de 2.4rem*/
+  --gap-big: 4rem;
+  /*seto um valor de distancia de 4rem*/
+}

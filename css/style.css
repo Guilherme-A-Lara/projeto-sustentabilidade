@@ -1,0 +1,247 @@
+@import "./gap.css";
+
+/*importo a biblioteca GAP, onde eu seto algumas opçoes padroes para o código*/
+* {
+  font-family: "Roboto", sans-serif !important;
+  /*seto a fonte e coloco como prioritária*/
+}
+
+.card-title {
+  /*busco o item com classe .card-title */
+  padding-top: 20px;
+  /*seto o item com padding-top = 20px*/
+}
+
+#sustenta {
+  /*busco o item com id sustena*/
+  font-family: "Pacifico", cursive !important;
+  /*seto a fonte e coloco como prioritária*/
+  margin: 2px;
+  /* seto uma margem de 2px*/
+  padding: 2px;
+  /*seto um padding de 2px*/
+}
+
+.wrapper {
+  /*seto a classe wrapper*/
+  display: flex;
+  /*seto o display como flex*/
+  flex-wrap: wrap;
+  /*seto o flex-wrapper como wrap (isso são classes do bootstrap)*/
+  width: 100%;
+  /*seto  o width como 100%*/
+  background-color: lightgray;
+  /*background como lightgray*/
+}
+
+.box {
+  /*  busco o item de classe box*/
+  box-sizing: border-box;
+  /* seto o tamanho do box e gero uma borda */
+  padding: 1rem;
+  /*padding de  1rem*/
+  margin: 1rem;
+  /* marginde  1rem*/
+  background-color: silver;
+  /*background silver*/
+  width: calc((100% / 3) - 2rem);
+  /* calculo para descontar a margem da largura do box se aumenta a marge tem que ajustar aqui tb */
+}
+
+#citacao {
+  font-family: cursive;
+  font-size: 24px;
+  color: blue;
+  text-decoration: linen;
+}
+
+#bg-nav {
+  /* chamo um elemento do bootstrap e altero sua cor*/
+  background-color: lightgreen !important;
+}
+
+#jumbotron {
+  /*chamo um elemento do bootstrap  e altero sua cor*/
+  background-color: lightsteelblue !important;
+}
+
+#logo-sustenta {
+  /* chamo o item de id logo-sustenta*/
+  width: 75px;
+  /* seto o logo com 75px*/
+  height: 75px;
+  /* seto o logo com 75px*/
+}
+
+#navbarSupportedContent {
+  /* elemento do bootstrap e altero suas configurações*/
+  letter-spacing: 1px;
+  /*seto o espaçamento das letras para 1px*/
+  margin: 5px;
+  /* seto a margin para 5px*/
+  font-size: 26px;
+  /* tamanho da fonte em 26px*/
+}
+
+#navbarSupportedContent a:hover {
+  /* seto um hover (passar o mouse e mudar a cor)*/
+  color: black;
+}
+
+#carousel-text h1 p {
+  /* cor do texto do carousel do h1  e do p */
+  color: black;
+}
+
+.progress {
+  /* cor do progress bar*/
+  color: black;
+}
+
+.container {
+  /* valores do container*/
+  padding-bottom: var(--gap-small);
+  /* nesse momento uso o gap q chamei no começo da pagina e seto o padding*/
+  margin: var(--gap-small);
+  /*gap small para a margin*/
+}
+
+#estudo {
+  font-size: 72px;
+  color: yellowgreen;
+}
+
+#botao-estudo {
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 6px;
+  transition-duration: 0.4s;
+  position: relative;
+}
+
+#botao-estudo a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#botao-estudo:hover {
+  background-color: #4caf50;
+  /* Green */
+}
+
+#news {
+  text-align: center;
+  background-color: lightsteelblue;
+  padding: var(--gap-small);
+}
+
+#news a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#logo {
+  height: 300.35px;
+}
+
+#card-body {
+  background-color: gainsboro !important;
+}
+
+#card-padding {
+  padding: var(--gap-small);
+}
+
+#btn:hover {
+  background-color: #4caf50;
+  /* Green */
+}
+
+#cards {
+  padding: var(--gap-small);
+}
+
+#video {
+  align-content: center;
+  margin-top: 50px;
+}
+
+#gif-footer {
+  width: 100%;
+}
+
+.card-sobre {
+  padding: 0;
+  margin: 0;
+}
+
+#card-title {
+  font-size: 48px !important;
+  color: lightgreen;
+}
+
+#card-title img {
+  width: 75px;
+  height: 75px;
+}
+
+#p-card-title {
+  font-size: 24px !important;
+  color: aliceblue;
+}
+
+#p-card-title b {
+  font-size: 22px !important;
+  color: aqua;
+}
+
+#jumbotron-ajuda {
+  background-color: white !important;
+  margin: 10px;
+}
+
+#jumbotron-ajuda h1 {
+  color: lightgreen !important;
+  text-align: center;
+}
+
+#jumbotron-ajuda p {
+  justify-content: center;
+  text-align: center;
+  color: black !important;
+  font-size: 32px;
+}
+
+.title-card h1,
+p {
+  justify-content: center;
+
+  text-align: center;
+}
+
+.title-card {
+  background-color: lightgrey;
+}
+
+.title-card p {
+  font-size: 26px;
+  padding: 20px;
+  margin: 20px;
+}
+
+#acoes h5 {
+  justify-content: center;
+  font-size: 48px;
+  text-align: center;
+}
+
+#acoes li {
+  justify-content: center;
+  font-size: 36px;
+  text-align: center;
+  color: #4caf50;
+}
+
+#span {
+  color: blue;
+}

@@ -1,0 +1,83 @@
+/*Nesse código é usado modos em css para criar um preloader para a pagina*/
+
+.preloader {
+  /*Aqui é aonde tem as configurações iniciais do preloader*/
+  position: fixed;
+  /*seta a posição como fixa*/
+  z-index: 9999;
+  /*seta q é para ele ficar em sobre a pagina */
+  top: 0;
+  /* top = 0 */
+  left: 0;
+  /* left = 0 */
+  width: 100%;
+  /* ocupar 100% da tela*/
+  height: 100vh;
+  /* ocupar 100% da altura da tela*/
+  background-color: black;
+  /* cor de fundo*/
+  display: flex;
+  /* tipo de display flex */
+  justify-content: center;
+  /* centralição dos conteudos*/
+  align-items: center;
+  /* alinhamneto dos itens */
+  transition: opacity 0.1s ease;
+  /* aqui seto a transição do preloader como opaco em 0.1 segundos com facilidade*/
+}
+
+.preloader>img {
+  /* a imagem do preloader*/
+  width: 150px;
+  /* tamanho da imagem*/
+  transition: all 0s ease;
+  /* aqui seto a transição da imagem como todas em 0 segundos com facilidade*/
+}
+
+.preloader.hidden {
+  /* aqui é o hidden (esconder) do preloader*/
+  animation: fadeOut 2s;
+  /* aqui eu seto q na animação do preloader apos 2 segundos ele entre em fade out*/
+  animation-fill-mode: forwards;
+  /* aqui eu coloco q o modo de preenchimento da animação  é  de encaminhamento*/
+}
+
+.text {
+  /* aqui eu seto o estilo de texto do preloader*/
+  width: 100%;
+  height: 100vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* tipo de fonte*/
+  font-size: 25px;
+  /* tamanho da fonte */
+  text-align: center;
+  /* alinhamento do campo de texto */
+  line-height: 650px;
+  /* tamanho da altura da linha*/
+  position: absolute;
+  /* posição absoluta */
+  top: 80%;
+  /* seto aonde no topo da pagina ficará o texto */
+  left: 50%;
+  /* seto a direção a direita ficará o texto*/
+  transform: translate(-50%, -50%) rotate(0deg);
+  /* transformação do texto com rotação e tradução do objeto */
+  color: white;
+  /* setar a cor do texto para white*/
+  --webkit-background-clip: text;
+  /* especifica o fundo do elemento como text*/
+  pointer-events: none;
+  /* sem ponteiros de eventos*/
+}
+
+@keyframes fadeOut {
+
+  /* aqui eu crio a animação de fadeOut para preloader*/
+  100% {
+    /* aqui eu seto q ele será 100% visivel*/
+    opacity: 100%;
+    /* seto a opacidade , ou seja, depois do tempoo estipulado para a animação ele ficara 100% opaco ( desaparece)*/
+    visibility: hidden;
+    /* escondo */
+  }
+}
